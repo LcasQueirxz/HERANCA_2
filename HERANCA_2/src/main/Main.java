@@ -1,6 +1,6 @@
-package Newpast;
+package main;
 
-import Main.*;
+import packs.*;
 
 public class Main {
 

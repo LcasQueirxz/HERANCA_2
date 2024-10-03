@@ -1,4 +1,4 @@
-package Main;
+package packs;
 
 public class Gerente {
     // Declarando variaveis privadas

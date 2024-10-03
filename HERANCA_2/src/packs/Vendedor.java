@@ -1,4 +1,4 @@
-package Main;
+package packs;
 
 public class Vendedor {
     // Declarando variáveis privadas
