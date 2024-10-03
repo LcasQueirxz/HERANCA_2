@@ -1,7 +1,7 @@
 package packs;
 
 public class Gerente {
-    // Declarando variaveis privadas
+    // declarando variaveis privadas
     private String nome;
     private String cpf;
     private String dataNascimento;
@@ -9,7 +9,7 @@ public class Gerente {
     private double salarioBase;
     private String departamento;
 
-    // Construtor para inicializar as variaveis
+    // construtor para inicializar as variaveis
     public Gerente(String nome, String cpf, String dataNascimento, String dataContratacao, double salarioBase, String departamento) {
         this.nome = nome;
         this.cpf = cpf;
@@ -19,7 +19,7 @@ public class Gerente {
         this.departamento = departamento;
     }
 
-    // getters
+    // chamando getters
     public String getNome() {
         return nome;
     }
@@ -44,7 +44,7 @@ public class Gerente {
         return departamento;
     }
 
-    // setters
+    // chamando setters
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -68,8 +68,9 @@ public class Gerente {
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
     }
+    //toString para mostrar dados do Gerente e chama-o para a main
 public 	String toString() {
-	return "Nome: " + nome + ", CPF: " + cpf + ",DataNascimento: " + dataNascimento + ", Data da Contratacao: " + dataContratacao + ", Salario Base:" + salarioBase + ", Departamento:" + departamento;
+	return "Nome: " + nome + ", CPF: " + cpf + ",DataNascimento: " + dataNascimento + ", Data da Contratacao: " + dataContratacao + ", Salario Base:" + salarioBase + ", Departamento: " + departamento;
 
 
 			

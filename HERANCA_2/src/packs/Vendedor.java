@@ -68,8 +68,9 @@ public class Vendedor {
     public void setPercentualComissao(double percentualComissao) {
         this.percentualComissao = percentualComissao;
     }
-    public String toString() {
-        return "Nome: " + nome + ", CPF: " + cpf + ",DataNascimento: " + dataNascimento + ", Data da Contratacao: " + dataContratacao + ", Salario Base:" + salarioBase + ", percentualComissao" + percentualComissao+"%";
+    public String toString() //toString pra imprimir e determinar o wue sera exibido no main
+    {
+        return "Nome: " + nome + ", CPF: " + cpf + ",DataNascimento: " + dataNascimento + ", Data da Contratacao: " + dataContratacao + ", Salario Base: " + salarioBase + ", percentual Comissao: " + percentualComissao + "%";
 
 }
 }

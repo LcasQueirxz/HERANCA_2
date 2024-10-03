@@ -1,35 +1,37 @@
-package packs;
+package packs; // define o pacote 'packs'
 
-public class Cliente {
+public class Cliente { // define a classe Cliente
+
+	//variaveis privadas(dados pessoais)
     private String nome;
     private String cpf;
-    private String dataNascimento;
+    private String dataNasc;
     private String email;
-    private String numeroCartaoFidelidade;
+    private String numCartaoFidelidade;
     private String telefone;
-
-    public Cliente(String nome, String cpf, String dataNascimento, String email, String numeroCartaoFidelidade, String telefone) {
+//valores para as variaveis
+    public Cliente(String nome, String cpf, String dataNasc, String email, String numCartaoFidelidade, String telefone) { // construtor da classe Cliente
         this.nome = nome;
         this.cpf = cpf;
-        this.dataNascimento = dataNascimento;
+        this.dataNasc = dataNasc;
         this.email = email;
-        this.numeroCartaoFidelidade = numeroCartaoFidelidade;
+        this.numCartaoFidelidade = numCartaoFidelidade;
         this.telefone = telefone;
     }
 
-    // Getters e Setters
+    // chamando getters e setters
     public String getNome() 
     { return nome; }
-    public void setNome(String nome) { this.nome = nome; }
+    public void setNome(String nome) 
+    { this.nome = nome; }
 
     public String getCpf() 
     { return cpf; }
-    public void setCpf(String cpf)
-    { this.cpf = cpf; }
+    public void setCpf(String cpf) { this.cpf = cpf; }
 
-    public String getDataNascimento() 
-    { return dataNascimento; }
-    public void setDataNascimento(String dataNascimento) { this.dataNascimento = dataNascimento; }
+    public String getDataNasc() 
+    { return dataNasc; }
+    public void setDataNasc(String dataNasc) { this.dataNasc = dataNasc; }
 
     public String getEmail() 
     { return email; }
@@ -37,17 +39,16 @@ public class Cliente {
     { this.email = email; }
 
     public String getNumeroCartaoFidelidade() 
-    { return numeroCartaoFidelidade; }
-    public void setNumeroCartaoFidelidade(String numeroCartaoFidelidade)
-    { this.numeroCartaoFidelidade = numeroCartaoFidelidade; }
+    { return numCartaoFidelidade; }
+    public void setNumeroCartaoFidelidade(String numCartaoFidelidade) { this.numCartaoFidelidade = numCartaoFidelidade; }
 
-    public String getTelefone() 
+    public String getTelefone()
     { return telefone; }
-    public void setTelefone(String telefone) 
+    public void setTelefone(String telefone)
     { this.telefone = telefone; }
     
-    public 	String toString() {
-    	return "Nome: " + nome + ", CPF: " + cpf + ",DataNascimento: " + dataNascimento + ",Email:" + email + ",Numero do cartao Fidelidade:" + numeroCartaoFidelidade + ", Telefone:" + telefone;
-    	
-}
-}
+    public String toString() { // metodo toString para exibir os detalhes do objeto Cliente e chamar pora main
+        return "Nome: " + nome + ", CPF: " + cpf + ",DataNascimento: " + dataNasc + ",Email:" + email + ",Numero do cartao Fidelidade:" + numCartaoFidelidade + ", Telefone:" + telefone;
+    }
+
+} 

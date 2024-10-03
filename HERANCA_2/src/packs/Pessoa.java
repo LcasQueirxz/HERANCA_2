@@ -1,19 +1,19 @@
 package packs;
 
 public class Pessoa {
-    // Declarando variáveis privadas
+    // Declarando variaveis privadas
     private String nome;
     private String cpf;
-    private String dataNascimento;
+    private String dataNasc;
 
-    // Construtor para inicializar as variáveis
-    public Pessoa(String nome, String cpf, String dataNascimento) {
+    // Construtor para inicializar as variaveis
+    public Pessoa(String nome, String cpf, String dataNasc) {
         this.nome = nome;
         this.cpf = cpf;
-        this.dataNascimento = dataNascimento;
+        this.dataNasc = dataNasc;
     }
 
-    // Getters
+    // chamando os getters
     public String getNome() {
         return nome;
     }
@@ -22,11 +22,11 @@ public class Pessoa {
         return cpf;
     }
 
-    public String getDataNascimento() {
-        return dataNascimento;
+    public String getDataNasc() {
+        return dataNasc;
     }
 
-    // Setters
+    // chamando os setters
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -35,17 +35,16 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    public void setDataNascimento(String dataNascimento) {
-        this.dataNascimento = dataNascimento;
+    public void setDataNasc(String dataNasc) {
+        this.dataNasc = dataNasc;
     }
 
-    // Método para imprimir a data de nascimento no console
-    public void imprimirDataNascimento() {
-        System.out.println(this.dataNascimento);
+    // Metodo para imprimir a data de nascimento no terminal
+    public void imDataNascimento() {
+        System.out.println(this.dataNasc);
     }
     public String toString() {
-    	
-    
-    return "Nome: " + nome + ", CPF: " + cpf + ",DataNascimento: " + dataNascimento;
+    //toString para chamar pro main
+    return "Nome: " + nome + ", CPF: " + cpf + ",Data Nascimento: " + dataNasc;
 }
 }
